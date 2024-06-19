@@ -58,31 +58,32 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,
+      label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -95,116 +96,143 @@
 \vspace{-7pt}
 
 \begin{center}
-    \textbf{\Huge \scshape Tomas Oh} \\ \vspace{4pt}
-    \small 
-    \faIcon{envelope}
-    \href{mailto:tomasohe@csu.fullerton.edu}
-    {\underline{tomasoh@csu.fullerton.edu}} $  $
-    \faIcon{github}
-    \href{https://github.com/tomasohCHOM}{\underline{github.com/tomasohCHOM}} 
-    \faIcon{home}
-    {Orange County, CA}
+  \textbf{\Huge \scshape Tomas Oh} \\ \vspace{4pt}
+  \small
+  \faIcon{envelope}
+  \href{mailto:tomasohe@csu.fullerton.edu}
+  {\underline{tomasoh@csu.fullerton.edu}} $  $
+  \faIcon{github}
+  \href{https://github.com/tomasohCHOM}{\underline{github.com/tomasohCHOM}}
+  \faIcon{home}
+  {Orange County, CA}
 \end{center}
 
 % -------------------- EDUCATION --------------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {California State University, Fullerton}{Expected Graduation: May 2026}
-      {Bachelor of Science in Computer Science}{GPA: 3.95}
-    % \vspace{-5pt}
-    \resumeItem
-      {\textbf{Relevant Coursework:} Data Structures, Software Engineering, Algorithm Engineering, File Structures and Databases} \\
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{California State University, Fullerton}{Expected Graduation: December
+  2025}
+{Bachelor of Science in Computer Science}{GPA: 3.95}
+% \vspace{-5pt}
+\resumeItem
+{\textbf{Relevant Coursework:} Data Structures, Software Engineering,
+  Algorithm Engineering, File Structures and Databases} \\
+\resumeSubHeadingListEnd
 
- % -------------------- Experience --------------------
+% -------------------- Experience --------------------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-        \resumeProjectHeading
-          {\textbf{Supplemental Instruction} $|$ 
-          \footnotesize\emph{California State University, Fullerton}}{January 2024 -- Present}
-          \resumeItemListStart
-          \resumeItem{Integrated interactive and collaborative study techniques, enhancing student learning of Calculus III concepts}
-          \resumeItem{Encouraged active student participation and peer discussion, resulting in a 10\% average grade increase}
-          \resumeItemListEnd
-          
-        \resumeProjectHeading
-          {\textbf{Research Assistant} $|$ 
-          \footnotesize\emph{Project ACCESS}}{February 2024 -- Present}
-          \resumeItemListStart
-          \resumeItem{Participated in a year-long research program, engaging in data science and cybersecurity projects to provide awareness on emerging social justice issues}
-          \resumeItem{Attended several workshops on topics such as study skills, career opportunities, and C++ programming}
-          \resumeItemListEnd
-          
-    \resumeSubHeadingListEnd 
+\resumeProjectHeading
+{\textbf{Data Science Research Assistant} $|$
+  \footnotesize\emph{Project ACCESS}}{May 2024 -- June 2024}
+\resumeItemListStart
+\resumeItem{Completed a five-week research program, utilizing data
+  science knowledge to address emerging social justice issues}
+\resumeItem{Co-developed a model to predict technological industry
+  salaries based on demographic data using NumPy, Pandas, and scikit-learn and
+  utilizing the Stack Overflow 2022 Developer Survey}
+\resumeItem{Provided a web interface to interact with the predictor
+  model using Svelte and FastAPI}
+\resumeItemListEnd
 
- % -------------------- PROJECTS --------------------
+\resumeProjectHeading
+{\textbf{Supplemental Instructor} $|$
+  \footnotesize\emph{California State University, Fullerton}}{Jan 2024
+  -- Present}
+\resumeItemListStart
+\resumeItem{Integrated interactive and collaborative study techniques
+  to enhance student learning of Calculus III concepts}
+\resumeItem{Encouraged active student participation and peer
+  discussion, resulting in a \textbf{10\%} average grade increase}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% -------------------- PROJECTS --------------------
 \section{Projects}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-        {\textbf{Clubannounce} $|$
-        \href{https://github.com/acmcsufoss/clubannounce}{\footnotesize\emph{\underline{Github}}}}{August 2023 -- Present}
-        \resumeItemListStart
-            \resumeItem{Collaborated as a team of three to create a full-stack web application to speed up the process of creating announcements within ACM, the largest computer science club at California State University, Fullerton}
-            \resumeItem{Tasked to create website design prototypes using Figma and develop the front-end of the application with \textbf{SvelteKit, TypeScript, and Sass}}
-            % \resumeItem{Chose to restart the entire project to optimize runtime and experience}
-            \resumeItem{Created design documents with teammates to organize workflow, benchmark our progress, and annotate potential new features to be implemented to enhance UX (User Experience)}
-            % \resumeItem{Published to GitHub and obsproject.com}
-        \resumeItemListEnd
-        \resumeProjectHeading
-        {\textbf{Devdle} $|$
-        \href{https://devdlegame.vercel.app}{\footnotesize\emph{\underline{Demo}}} $|$
-        \href{https://github.com/tomasohCHOM/Devdle}{\footnotesize\emph{\underline{Github}}}}{July 2023 -- August 2023}
-        \resumeItemListStart
-            \resumeItem{Built a full-stack Wordle-inspired application in \textbf{SvelteKit} and \textbf{TypeScript}, encompassing \textbf{50+} software-related and web development concepts while providing educational content and a learning experience for users}
-            \resumeItem{Integrated Supabase \textbf{Social OAuth} to enable user authentication with Google, Github, and Discord accounts}
-            % \resumeItem{Implemented a real-time leaderboard using \textbf{Web Sockets}, promoting an engaging learning experience for those interested in the Software Development area.}
-            \resumeItem{Implemented advanced full-stack application patterns such as \textbf{Server-Side Rendering (SSR)}, cookie sessions, and progressive enhancement for an improved UX}
-        \resumeItemListEnd
-        \resumeProjectHeading
-        {\textbf{CanvasFindPeople} $|$
-        \href{https://github.com/tomasohCHOM/CanvasFindPeople}{\footnotesize\emph{\underline{Github}}}}{August 2023 -- September 2023}
-        \resumeItemListStart
-            \resumeItem{Utilized the CanvasAPI to create a Discord bot focused on searching people through Canvas courses}
-            % \resumeItem{Created intended behavior by making logic complying with the extensive Spigot API in Java}
-            \resumeItem{Used \textbf{SQLite} with \textbf{Python} to store users' Canvas API keys in a lightweight fashion through Discord commands}
-            % \resumeItem{Optimized time efficiency by implementing \textbf{Binary Search} on ordered last name arrays, resulting in an average increased speed performance \textbf{of 40\%}}
-            \resumeItem{Provided multiple searching options (Linear, Binary Search) and \textbf{CRUD} operations for the bot's flexibility of use}
-        \resumeItemListEnd
-        \resumeProjectHeading
-        {\textbf{MatriXpert} $|$
-        \href{https://matrixpert.netlify.app}{\footnotesize\emph{\underline{Demo}}} $|$
-        \href{https://github.com/tomasohCHOM/MatriXpert}{\footnotesize\emph{\underline{Github}}}}{June 2023 -- July 2023}
-        \resumeItemListStart
-            \resumeItem{Developed a comprehensive calculator website aimed to perform multiple linear algebra operations using \textbf{React.js, Sass, Katex} and deployed on Netlify}
-            \resumeItem{Implemented operations such as matrix multiplication, transpose, determinant, and REF/RREF, ensuring edge-case handling within user input}
-            \resumeItem{Generated end-to-end unit testing on the underlying matrix algorithms using \textbf{Vitest}}
-        \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Fullyhacks} $|$ \emph{Next.js, ReactJS, TypeScript,
+    TailwindCSS, MongoDB, Prisma}}{Dec 2023 -- Feb 2024}
+\resumeItemListStart
+\resumeItem{Collaborated as a team of six to redevelop the
+  full-stack web application for Fullyhacks, the largest \textbf{year-round
+    hackathon} at California State University, Fullerton}
+\resumeItem{Implemented UI components across different pages,
+  including the landing page, application page, and user portal}
+\resumeItem{Worked closely with the project lead to deliver an
+  enhanced user experience for \textbf{500+} users}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{QuizZard} $|$ \emph{SvelteKit, TypeScript, TailwindCSS,
+    Supabase}}{Jan 2024 -- Feb 2024}
+\resumeItemListStart
+\resumeItem{Created a full-stack quiz web application built for
+  interactive learning and enhancing Math SI sessions}
+\resumeItem{Utilized Supabase for Authentication and \textbf{CRUD}
+  operations to enable users to build their own quizzes}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{char-roles-bot} $|$ \emph{Deno, TypeScript, Discord REST
+    API}}{Dec 2023 -- Jan 2024}
+\resumeItemListStart
+\resumeItem{Developed a Discord application to automatically
+  assign/remove roles in a server via slash commands}
+\resumeItem{Utilized the Discord REST API to handle \textbf{80+}
+  roles for a server with \textbf{400} members}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{github-stats} $|$ \emph{Go, Github API}}{May 2024 -- June
+  2024}
+\resumeItemListStart
+\resumeItem{Created an interactive CLI application to fetch GitHub
+  user stats (issues, pull requests, and earned stargazers)}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{MatriXpert} $|$ \emph{ReactJS, JavaScript, KaTeX,
+    Vitest}}{June 2023 -- July 2023}
+\resumeItemListStart
+\resumeItem{Developed a comprehensive calculator website capable of
+  performing multiple linear algebra operations (matrix multiplication,
+  transpose, determinant, etc.)}
+\resumeItem{Generated end-to-end unit testing on the underlying
+  matrix algorithms using \textbf{Vitest}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 % -------------------- SKILLS --------------------
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Programming}{: C/C++, Python, TypeScript/JavaScript, Rust, Java, HTML/CSS, SQL} \\
-     \textbf{Web Development}{: Next.js, ReactJS, Node.js, Deno, Svelte/SvelteKit, Prisma, Sass, TailwindCSS, Supabase} \\
-     \textbf{Tools}{: Git/GitHub, VIM, Bash Shell, MS Office, Netlify, Vercel, Figma} \\
-     \textbf{Languages}{: English, Spanish, Korean}
-    }}
- \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Programming}{: C, C++, Python, TypeScript, JavaScript, Go, Java,
+                  HTML/CSS, SQL} \\
+                \textbf{Web Development}{: Next.js, ReactJS, Node.js, Deno,
+                  Svelte/SvelteKit, FastAPI, Sass, TailwindCSS} \\
+                \textbf{Databases/Services}{: MySQL, SQLite, MongoDB, Supabase, AWS,
+                  Netlify, Vercel} \\
+                \textbf{Tools}{: Git, Vim/Neovim, Jupyter Notebook, Postman, MS Office,
+                  Figma}
+          }}
+\end{itemize}
 
 % -------------------- EXTRACURRICULARS --------------------
 \section{Extracurriculars}
-  \resumeSubHeadingListStart
-        \resumeProjectHeading
-          {\textbf{ACM at California State University, Fullerton} $|$ 
-          \footnotesize\emph{Board Member, Fullyhacks organizer}}{January 2023 -- Present}
-          \resumeItemListStart
-          \resumeItem{Led and organized workshops on technologies such as SvelteKit and VIM for CSUF's largest computer science club}
-          \resumeItem{Collaborated with fellow student developers to build open source projects for the organization's benevolent}
-          \resumeItem{Co-developed the website for Fullyhacks, (year-long hackathon), using Next.js, TypeScript, and TailwindCSS}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd 
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Association for Computing Machinery (ACM)} $|$
+  \footnotesize\emph{Open Source Software Team Lead, Officer}}{Jan 2023
+  -- Present}
+\resumeItemListStart
+\resumeItem{Led one of the branches of the \textbf{largest computer
+    science club} at California State University, Fullerton}
+\resumeItem{Maintained the club's \textbf{Open Source Software}
+  initiative and organization, tailoring workshop and project ideas toward Open
+  Source development and its impact in the engineering space}
+\resumeItem{Collaborated with fellow student developers to build
+  software tools with positive impacts on the community}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 \end{document}
