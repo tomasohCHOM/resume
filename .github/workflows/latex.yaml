@@ -1,29 +1,29 @@
 name: Build LaTeX document
-
-on: 
+on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
+    paths:
+      - '**.tex'
 jobs:
-  build:
+  build_latex:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Set up Git repository
+        uses: actions/checkout@v3
 
-    - name: Setup LaTeX environment
-      uses: dante-ev/latex-action@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume.tex
 
-    - name: Compile LaTeX document
-      run: pdflatex -interaction=nonstopmode -halt-on-error resume.tex
+      - name: Commit PDF file
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add resume.pdf
+          git commit -m "Update resume.pdf" -a
 
-    - name: Upload PDF
-      uses: actions/upload-artifact@v3
-      with:
-        name: compiled-pdf
-        path: resume.pdf
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
