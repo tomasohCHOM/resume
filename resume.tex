@@ -79,11 +79,10 @@
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,
-      label={}]}
-    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -113,18 +112,37 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{California State University, Fullerton}{Expected Graduation: December
-  2025}
+{California State University, Fullerton}{Expected Graduation: December 2025}
 {Bachelor of Science in Computer Science, Minor in Mathematics}{GPA: 3.95}
 % \vspace{-5pt}
 \resumeItem
-{\textbf{Relevant Coursework:} Data Structures, Software Engineering,
-  Algorithm Engineering, File Structures and Databases} \\
+{\textbf{Relevant Coursework:} Data Structures, Software Engineering, Operating Systems, Web Back-End Engineering} \\
 \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Programming}{: C, C++, Python, TypeScript, JavaScript, Go, Java, Rust, HTML/CSS, SQL} \\
+    \textbf{Technologies}{: Next.js, ReactJS, Node.js, Svelte/SvelteKit, FastAPI, NumPy, Pandas, scikit-learn, TailwindCSS} \\
+    \textbf{Databases/Services}{: PostgreSQL, SQLite, MongoDB, Supabase, Firebase, AWS} \\
+    \textbf{Tools}{: Git, Linux, Vim/Neovim, tmux, Jupyter Notebook, Postman, MS Office, Figma}
+}}
+\end{itemize}
 
 % -------------------- Experience --------------------
 \section{Experience}
 \resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Open Source Software Team Lead} $|$
+  \footnotesize\emph{Association for Computing Machinery (ACM)}}{Jan 2023
+  -- Present}
+\resumeItemListStart
+\resumeItem{Led an \textbf{open source software} initiative, consisting of \textbf{60+} student contributors and \textbf{20+} maintained projects}
+\resumeItem{Collaborated with fellow members to build full-stack, back-end, and infrastructure solutions that benefited the community, exposing students to multiple languages, technologies, and design patterns}
+\resumeItem{Hosted weekly workshops centered around open source development and its impact in the engineering space}
+\resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Data Science and AI/Robotics Research Assistant} $|$
@@ -137,15 +155,22 @@
 
 \resumeProjectHeading
 {\textbf{Supplemental Instructor} $|$
-  \footnotesize\emph{California State University, Fullerton}}{Jan 2024
-  -- Present}
+ \footnotesize\emph{California State University, Fullerton}}{Jan 2024
+  -- Present} 
 \resumeItemListStart
 \resumeItem{Conducted weekly sessions to reinforce students' understanding of \textbf{multivariable} and \textbf{vector calculus} concepts}
-\resumeItem{Integrated interactive and collaborative study techniques
-  to help improve problem-solving skills for complex topics}
-\resumeItem{Fostered active student participation and peer
-  discussion, resulting in a \textbf{10\%} average grade increase}
+\resumeItem{Integrated interactive and collaborative study techniques to help improve problem-solving skills for complex topics}
+\resumeItem{Fostered active student participation and peer discussion, resulting in a \textbf{10\%} average grade increase}
 \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Full-Stack Web Developer Officer} $|$ \footnotesize\emph{FullyHacks 2024}}{Sep 2023 -- Feb 2024}
+\resumeItemListStart
+\resumeItem{Collaborated with a team of six to build the website for Fullyhacks, the largest \textbf{year-round hackathon} at California State University, Fullerton, attracting \textbf{400+} applicants and \textbf{10} sponsors}
+\resumeItem{Implemented multiple pages and refactored \textbf{Next.js} and \textbf{TypeScript} codebase for a more consistent architecture}
+\resumeItem{Delegated tasks to teammates, documented bugs and feature requests, and actively contributed to code reviews}
+\resumeItemListEnd
+
 
 \resumeSubHeadingListEnd
 
@@ -153,17 +178,8 @@
 \section{Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Fullyhacks} $|$ \emph{Next.js, ReactJS, TypeScript,
-    TailwindCSS, MongoDB, Prisma}}{\footnotesize\faIcon{github} \href{https://github.com/acmcsufoss/fullyhacks}{\underline{acmcsufoss/fullyhacks}}}
-\resumeItemListStart
-\resumeItem{Collaborated with a team of six to build the website for Fullyhacks, the largest \textbf{year-round hackathon} at California State University, Fullerton with \textbf{400+} applicants}
-\resumeItem{Delegated tasks to teammates, documented bugs and feature requests, and actively contributed to code reviews}
-\resumeItem{Implemented UI components across multiple pages and refactored the codebase for a more consistent architecture}
-\resumeItemListEnd
-
-\resumeProjectHeading
 {\textbf{vimaroo} $|$ \emph{SvelteKit, TypeScript, TailwindCSS,
-    Supabase, Monaco, Vim}}{\footnotesize\faIcon{link} \href{https://vimaroo.vercel.app}{\underline{vimaroo.vercel.app}}}
+    Supabase, Monaco, Vim}}{\footnotesize\faIcon{link} \href{https://vimaroo.vercel.app}{vimaroo.vercel.app}}
 \resumeItemListStart
 \resumeItem{Built a web application that allows users to practice \textbf{Vim} keybindings, featuring interactive, motion-focused tests}
 \resumeItem{Used Supabase and PostgreSQL for authentication, user management, and real-time user statistics storage}
@@ -171,52 +187,34 @@
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{go-blueprint} $|$ \emph{Go, Cobra CLI}}{\footnotesize\faIcon{github} \href{https://github.com/Melkeydev/go-blueprint}{\underline{Melkeydev/go-blueprint}}}
+{\textbf{go-blueprint} $|$ \emph{Go, Cobra CLI}}{\footnotesize\faIcon{github} \href{https://github.com/Melkeydev/go-blueprint}{Melkeydev/go-blueprint}}
 \resumeItemListStart
 \resumeItem{Contributed to an open source CLI tool that automatically spins up Go projects (\textbf{2.6k+} GitHub stars)}
 \resumeItem{Implemented a flag that allows users to opt out from creating a git repository, resolving \textbf{16\%} of reported bugs}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{char-roles-bot} $|$ \emph{Deno, TypeScript, Discord REST
-    API}}{\footnotesize\faIcon{github} \href{https://github.com/tomasohCHOM/char-roles-bot}{\underline{tomasohCHOM/char-roles-bot}}}
+{\textbf{aoc-dailies} $|$ \emph{Deno, TypeScript, Discord REST, Advent Of Code}}{\footnotesize\faIcon{github} \href{https://github.com/tomasohCHOM/aoc-dailies}{tomasohCHOM/aoc-dailies}}
 \resumeItemListStart
-\resumeItem{Developed a Discord application to automatically
-  assign/remove roles in a server via slash commands}
-\resumeItem{Utilized the Discord REST API to handle \textbf{80+}
-  roles for a server with \textbf{400} members}
+\resumeItem{Developed a Discord webhook to send Advent Of Code daily challenges to a server with \textbf{2000+} members}
+\resumeItem{Set up a cron job to scrape challenge information and links, and deliver them as Discord embed messages}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-% -------------------- SKILLS --------------------
-\section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-    \textbf{Programming}{: C, C++, Python, TypeScript, JavaScript, Go, Java, Rust, HTML/CSS, SQL} \\
-    \textbf{Technologies}{: Next.js, ReactJS, Node.js, Svelte/SvelteKit, FastAPI, NumPy, Pandas, scikit-learn, TailwindCSS} \\
-    \textbf{Databases/Services}{: PostgreSQL, SQLite, MongoDB, Supabase, Firebase, AWS} \\
-    \textbf{Tools}{: Git, Vim/Neovim, Jupyter Notebook, Postman, MS Office, Figma}
-}}
-\end{itemize}
-
 % -------------------- EXTRACURRICULARS --------------------
-\section{Extracurriculars}
+\section{Extracurriculars \& Leadership}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Open Source Software Team Lead, Officer} $|$
-  \footnotesize\emph{Association for Computing Machinery (ACM)}}{Jan 2023
+{\textbf{Association for Computing Machinery} $|$
+  \footnotesize{Team Lead, Board Officer, Open Source Contributor}}{Jan 2023
   -- Present}
-\resumeItemListStart
-\resumeItem{Led a branch of the \textbf{largest computer
-    science club} at California State University, Fullerton (\textbf{1000+} members)}
-\resumeItem{Maintained the club's \textbf{Open Source Software}
-  initiative and organization, tailoring workshop and project ideas toward Open
-  Source development and its impact in the engineering space}
-\resumeItem{Collaborated with fellow student developers to build
-  software tools with positive impacts on the community}
-\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{FullyHacks} $|$
+  \footnotesize{FullyHacks 2024 Web Dev Officer, Incoming Web Dev Team Lead for FullyHacks 2025}}{Sep 2023
+  -- Present}
 \resumeSubHeadingListEnd
 
 \end{document}
+
 
